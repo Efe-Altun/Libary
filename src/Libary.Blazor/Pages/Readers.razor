@@ -1,0 +1,65 @@
+﻿@page "/Readers"
+
+<div class="container">
+    @if (IsLoading)
+    {
+      <section class="dots-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </section>
+
+    }
+    else
+    {
+        @if (BookList?.Any() == true)
+        {
+            @foreach (var item in BookList)
+            {
+                            <div class="box">
+                                            <img src class="resim">@item.Image  >
+                                <p class="Tablo 1">@item.Name</p>
+                            </div>
+            }
+        }
+    }
+</div>
+
+
+
+<style scoped>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0px;
+        background-color: #F4F4F4;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .box {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .box p {
+        margin: 10px 0 0;
+        color: #333;
+    }
+
+
+
+    
+</style>

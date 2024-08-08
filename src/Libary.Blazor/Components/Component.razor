@@ -1,0 +1,10 @@
+﻿@using Volo.Abp.DependencyInjection
+@using Volo.Abp.AspNetCore.Components.Web.BasicTheme.Themes.Basic
+@inherits Branding
+@attribute [ExposeServices(typeof(Branding))]
+@attribute [Dependency(ReplaceServices = true)]
+
+<a href="/">
+    <img src="indir.png" width="130"  />
+    <A href linkReel="https://localhost:44353/" ></a>
+</a>

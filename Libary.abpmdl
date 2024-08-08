@@ -1,0 +1,85 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.Account": {
+      "version": "8.2.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.2.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.2.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.2.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Libary.Application": {
+      "path": "src/Libary.Application/Libary.Application.abppkg",
+      "folder": "src"
+    },
+    "Libary.Application.Tests": {
+      "path": "test/Libary.Application.Tests/Libary.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Libary.Domain.Shared": {
+      "path": "src/Libary.Domain.Shared/Libary.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Libary.Application.Contracts": {
+      "path": "src/Libary.Application.Contracts/Libary.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Libary.HttpApi": {
+      "path": "src/Libary.HttpApi/Libary.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Libary.HttpApi.Client": {
+      "path": "src/Libary.HttpApi.Client/Libary.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Libary.EntityFrameworkCore.Tests": {
+      "path": "test/Libary.EntityFrameworkCore.Tests/Libary.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Libary.EntityFrameworkCore": {
+      "path": "src/Libary.EntityFrameworkCore/Libary.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Libary.TestBase": {
+      "path": "test/Libary.TestBase/Libary.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Libary.Domain.Tests": {
+      "path": "test/Libary.Domain.Tests/Libary.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Libary.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Libary.HttpApi.Client.ConsoleTestApp/Libary.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Libary.DbMigrator": {
+      "path": "src/Libary.DbMigrator/Libary.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Libary.Blazor": {
+      "path": "src/Libary.Blazor/Libary.Blazor.abppkg",
+      "folder": "src"
+    },
+    "Libary.Domain": {
+      "path": "src/Libary.Domain/Libary.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
