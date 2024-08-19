@@ -65,7 +65,7 @@ public class LibaryMenuContributor : IMenuContributor
     ).AddItem(
         new ApplicationMenuItem(
             "BooksStore.Books",
-            l["Menu:Books"],
+            l["Books"],
             url: "/books"
         )
     ).
@@ -75,10 +75,19 @@ public class LibaryMenuContributor : IMenuContributor
     AddItem(
         new ApplicationMenuItem(
             "BooksStore.Readers",
-            l["Menu:Readers"],
+            l["Readers"],
             url: "/readers"
         )
     )
+    .AddItem(
+        new ApplicationMenuItem(
+            "BookStore.structure",
+            l["structure"],
+            url:"/Structure"
+            
+            )
+        
+        )
       
  
         );

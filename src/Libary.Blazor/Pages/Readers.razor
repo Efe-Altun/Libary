@@ -3,15 +3,17 @@
 <div class="container">
     @if (IsLoading)
     {
-      <section class="dots-container">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </section>
+        <section class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </section>
+        
 
     }
+
     else
     {
         @if (BookList?.Any() == true)
@@ -19,7 +21,7 @@
             @foreach (var item in BookList)
             {
                             <div class="box">
-                                            <img src class="resim">@item.Image  >
+                                            <img src class="resim"> >
                                 <p class="Tablo 1">@item.Name</p>
                             </div>
             }
@@ -60,6 +62,6 @@
     }
 
 
-
     
+
 </style>
